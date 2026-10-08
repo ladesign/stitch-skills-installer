@@ -22,7 +22,6 @@
 
 - VS Code
 - OpenCode
-- PowerShell（Windows）或 Bash（macOS / Linux）
 - Git
 
 
@@ -42,7 +41,7 @@
 
 ## 不需要 Node.js
 
-不需要 Node.js，使用 Git + Windows PowerShell。 
+不需要 Node.js，使用 Git + Windows cmd。 
 
 ## 使用方式
 1. 將 `update-stitch-skills-opencode.cmd` 放在專案根目錄
@@ -72,7 +71,7 @@ your-project/
 | 9 | GitHub 新增 Skill 自動加入 | 每次執行指令檔會全掃描，新 skill 自然會被發現並同步 |
 | 10 | GitHub 移除 Skill 自動移除 | 比對 `$oldManagedSkills` 與當前 upstream，不存在就刪除 |
 | 11 | 只移除「之前由這個同步腳本管理」的 Skill | 刪除候選名單來自 manifest，不碰 manifest 以外的 skill |
-| 12 | 不需要 Node.js，只有 Git + Windows PowerShell | 只相依 Git + Windows PowerShell |
+| 12 | 不需要 Node.js，只有 Git + Windows cmd | 只相依 Git + Windows cmd |
 
 ## 功能
 
@@ -87,7 +86,7 @@ your-project/
 ## 執行流程
 
 ```text
-[1/6] 檢查依賴（Git、PowerShell）
+[1/6] 檢查依賴（Git）
 [2/6] 從 GitHub 下載最新 stitch-skills
 [3/6] 掃描並同步全部 Skills
 [4/6] 顯示目前專案 OpenCode Skills
