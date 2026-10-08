@@ -36,8 +36,6 @@
 
 
 
-
-
 ## 不需要安裝Skills CLI
 
 不需要先 Skills CLI 將 stitch-skills 倉庫中全部技能安裝到全域路徑；執行`update-stitch-skills-opencode.cmd`指令檔是將 GitHub 的 `google-labs-code/stitch-skills`最新版 Stitch Skills 同步到專案。
@@ -158,7 +156,7 @@ your-project/
 - 因為腳本以 `%~dp0` 判定專案根目錄，所以放在哪個資料夾，就會同步到該資料夾下的 `.opencode/skills/`
 - 如果你自己還有其他手動建立的 OpenCode Skills，放在 `.opencode/skills/` 裡不會被影響
 - 若 GitHub 新增 Skill，下次執行會自動加入；若移除，也只會移除manifest中記錄的舊項目
-
+- .opencode/opencode.json 文件需設置 Stitch MCP 服務才能使用`stitch-skills`全部技能
 
 ## License
 
