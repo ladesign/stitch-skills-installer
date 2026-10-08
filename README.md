@@ -160,4 +160,4 @@ your-project/
 
 ## License
 
-MIT。
+MIT
